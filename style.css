@@ -1,0 +1,223 @@
+.pimg1{
+	background-image: url("image5.jpg");
+	position:relative;
+	
+	min-height: 1000px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.pimg3{
+	background-image: url("image8.jpg");
+	position:relative;
+	
+	min-height: 100px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.pimg4{
+	background-image: url("img7.jpg");
+	position:relative;
+	
+	min-height: 500px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.pimg2{
+	background-image: url("image7.jpg");
+	position:relative;
+	
+	min-height: 100px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+
+
+
+
+
+
+#navbar{
+position: fixed;
+right: 0;
+left: 0;
+z-index: 1;
+height:2000px;
+}
+.ptext{
+  position:absolute;
+  top:35%;
+  width:100%;
+  text-align:center;
+  color:white;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+.my_image{
+	align-items: center;
+}
+.section-title{
+	text-align: center;
+	padding: 20px 0px;
+	color: black;
+}
+.section-title2{
+	text-align: center;
+	padding: 20px 0px;
+	color: black;
+}
+.ptext1{
+	padding-top: 20px;
+	padding-bottom: 20%;
+	letter-spacing: 25%;
+	color: grey;
+	word-spacing: 45%;
+	font-size: 15px;
+}
+.section1{
+	padding-top: 10%;
+	padding-bottom: 10%;
+	background-color: white;
+}
+.section2{
+	padding-top: 10%;
+	padding-bottom: 10%;
+	background-color: #a1a6a2;
+}
+
+.section3{
+	padding-top: 10%;
+	padding-bottom: 10%;
+	background-color: white;
+
+}
+.section4{
+	padding-top: 10%;
+	padding-bottom: 10%;
+	background-color: #a1a6a2;
+}
+.ptext2{
+	padding-bottom: 20%;
+	padding-top: 10%;
+}
+
+.ptext3{
+	padding-bottom: 20%;
+	padding-top: 10%;
+	 
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+nav{
+  background: #151515;
+  padding: 1px 25px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #33ffff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: cyan;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 25%;
+    
+    display:block;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #33ffff,
+                inset 0 0 10px #66ffff;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}
